@@ -1,5 +1,3 @@
-
-
 export default class Entities extends Phaser.GameObjects.Sprite {
 	/**
 	 * Constructor de Enemy
