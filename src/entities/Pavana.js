@@ -1,4 +1,4 @@
-import Entities from './Entities.js';
+import Entities from './entities/Entities.js';
 
 export default class Pavana extends Entities {
 	constructor(scene, x, y) {
