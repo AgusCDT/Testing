@@ -1,6 +1,6 @@
-  /*import { Shop } from './scenes/Shop.js'
-  import { Menu } from './scenes/Menu.js'*/
-  import Tierra from './Tierra.js';
+  /*import Shop from './scenes/Shop.js'
+  import Menu from './scenes/Menu.js'*/
+  import Tierra from './src/scenes/Tierra.js';
     let config = {
         type: Phaser.AUTO,
         width: 800,

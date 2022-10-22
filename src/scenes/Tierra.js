@@ -1,5 +1,5 @@
 /*Escena del juego. Aquí debería importarse el script de la pavana*/
-import Pavana from './pavana.js';
+import Pavana from './src/entities/Pavana.js';
 
 export default class Tierra extends Phaser.Scene {
 	constructor() {

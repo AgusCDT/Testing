@@ -1,6 +1,6 @@
 
 
-export default class entities extends Phaser.GameObjects.Sprite {
+export default class Entities extends Phaser.GameObjects.Sprite {
 	/**
 	 * Constructor de Enemy
 	 * @param {Scene} scene Escena en la que aparecerá el enemigo
