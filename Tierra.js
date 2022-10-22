@@ -12,7 +12,7 @@ export default class Tierra extends Phaser.Scene {
 	 }
 	 
 	 create() {
-	 	this.add.image(0, 0, 'tierra').setOrigin(0, 0);;
+	 	this.add.image(0, 0, 'tierra').setOrigin(0, 0);
 	 	
 	 	let pavana = new pavana(this, 20, 20);
 	 	
