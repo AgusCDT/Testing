@@ -15,7 +15,7 @@ export default class Menu extends Phaser.Scene {
 	 }
 	 // creación del botón
 	 create() {
-	 	this.add.image(0, 0, 'tierra').setOrigin(0, 0);
+	 	this.add.image(0, 0, 'menu').setOrigin(0, 0);
 	 	this.ShopButton.create();
 	 	this.StartButton.create();
 	 }

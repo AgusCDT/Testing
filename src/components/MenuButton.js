@@ -9,7 +9,7 @@ export default class MenuButton{
 	}
 
 	create(){
-		this.menuButton = this.relatedScene.add.sprite(400, 230, 'menubutton').setInteractive();
+		this.menuButton = this.relatedScene.add.image(400, 230, 'menubutton').setInteractive();
 		this.menuButton.on('pointerdown',() => {
 			this.relatedScene.scene.start('menu');
 		});

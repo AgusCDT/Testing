@@ -10,7 +10,7 @@ export default class ShopButton{
 
 	create(){
 		this.shopButton = this.relatedScene.add.image(400, 230, 'shopbutton').setInteractive();
-		this.startButton.on('pointerdown',() => {
+		this.shopButton.on('pointerdown',() => {
 			this.relatedScene.scene.start('shop');
 		});
 	}

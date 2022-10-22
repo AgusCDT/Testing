@@ -5,7 +5,7 @@ export default class StartButton{
 	}
 
 	preload() {
-		this.relatedScene.load.spritesheet('startbutton', './assets/imagenes/gaviota.png');
+		this.relatedScene.load.image('startbutton', './assets/imagenes/gaviota.png');
 	}
 
 	create(){
