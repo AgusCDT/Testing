@@ -9,7 +9,7 @@ import Tierra from './scenes/Tierra.js';
         scale: {
             autoCenter: Phaser.Scale.CENTER_HORIZONTALLY
         },
-        scene: [Tierra, Menu, Shop],           
+        scene: [Menu,Tierra, Shop],           
         physics: { 
             default: 'arcade', 
             arcade: { 
