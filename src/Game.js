@@ -1,6 +1,6 @@
-  /*import Shop from './scenes/Shop.js'
-  import Menu from './scenes/Menu.js'*/
-  import Tierra from './scenes/Tierra.js';
+/*import Shop from './scenes/Shop.js'
+import Menu from './scenes/Menu.js'*/
+import Tierra from './scenes/Tierra.js';
     let config = {
         type: Phaser.AUTO,
         width: 800,
@@ -11,7 +11,7 @@
         },
         scene: [Tierra],           
         physics: { 
-        default: 'arcade', 
+            default: 'arcade', 
             arcade: { 
                 gravity: { y: 0 }, 
                 debug: false 
@@ -19,6 +19,5 @@
         }             
     };
 
-    new Phaser.Game(config);
-
+new Phaser.Game(config);
 
