@@ -5,18 +5,19 @@
         type: Phaser.AUTO,
         width: 800,
         height: 600,
-        physics: {
-            default: 'arcade',
-            arcade: {
-                gravity: { y: 200 }
-            }
-        },
+        pixelArt: true,
         scale: {
         autoCenter: Phaser.Scale.CENTER_HORIZONTALLY
         },
-        scene: {
-            [Tierra]}
-                   
+        scene: 
+            [Tierra],
+        physics: { 
+        default: 'arcade', 
+            arcade: { 
+                gravity: { y: 0 }, 
+                debug: false 
+            } 
+        }             
     };
 
     new Phaser.Game(config);
