@@ -1,12 +1,17 @@
-export class StartButton{
+export default class StartButton{
 	
 	constructor(scene){
 		this.relatedScene = scene;
 	}
+
 	preload() {
-		this.relatedScene.load.spritesheet('',/*direccion de imagen, { frameWidth:..})	*/	
+		this.relatedScene.load.spritesheet('startbutton', './assets/imagenes/gaviota.png');
 	}
-	create() {
-		this.StartButton = this.relatedScene.add.sprite( , ,)
+
+	create(){
+		this.startButton = this.relatedScene.add.image(400, 140, 'startbutton').setInteractive();
+		this.startButton.on('pointerdown',() => {
+			this.relatedScene.scene.start('tierra');
+		});
 	}
 }
