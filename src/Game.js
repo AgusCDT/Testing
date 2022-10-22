@@ -1,6 +1,6 @@
   /*import { Shop } from './scenes/Shop.js'
-  import { Menu } from './scenes/Menu.js'
-  import { Tierra } from './scenes/Tierra.js'*/
+  import { Menu } from './scenes/Menu.js'*/
+  import Tierra from './scenes/Tierra.js';
     let config = {
         type: Phaser.AUTO,
         width: 800,
@@ -11,25 +11,14 @@
                 gravity: { y: 200 }
             }
         },
+        scale: {
+        autoCenter: Phaser.Scale.CENTER_HORIZONTALLY
+        },
         scene: {
-            preload:preload, create:create}
+            [Tierra]}
                    
     };
 
-      var game = new Phaser.Game(config);
+    new Phaser.Game(config);
 
-    function preload ()
-    {
-        this.load.image("pavana", "./assets/imagenes/gaviota.png");
-
-        
-    }
-
-    function create ()
-    {
-      this.pavana = this.physics.add.image(400, 300, "pavana");
-      this.pavana.setScale(0.5); 
-      
-      this.pavana.setCollideWorldBounds(true);
-    }
 
