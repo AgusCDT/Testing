@@ -1,4 +1,4 @@
-export class MenuButton{
+export default class MenuButton{
 
 	constructor(scene){
 		this.relatedScene = scene;
