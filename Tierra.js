@@ -8,7 +8,7 @@ export default class Tierra extends Phaser.Scene {
 	 // preload de la imagen de fondo
 	 preload() {
 	 	this.load.image('tierra', './assets/imagenes/otras/TRIOLIC.png');
-	 	this.load.image('pavana', 'assets/imagenes/gaviota.png');
+	 	this.load.image('pavana', './assets/imagenes/gaviota.png');
 	 }
 	 
 	 create() {
