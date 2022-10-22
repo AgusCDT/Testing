@@ -5,11 +5,11 @@ export default class ShopButton{
 	}
 
 	preload(){
-		this.relatedScene.load.image('shopbutton', './assets/imagenes/otras/anadir');
+		this.relatedScene.load.image('shopbutton', './assets/imagenes/otras/anadir.png');
 	}
 
 	create(){
-		this.shopButton = this.relatedScene.add.image(400, 230, 'shopbutton').setInteractive();
+		this.shopButton = this.relatedScene.add.image(400, 400, 'shopbutton').setInteractive();
 		this.shopButton.on('pointerdown',() => {
 			this.relatedScene.scene.start('shop');
 		});
