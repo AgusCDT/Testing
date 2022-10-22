@@ -7,10 +7,9 @@
         height: 600,
         pixelArt: true,
         scale: {
-        autoCenter: Phaser.Scale.CENTER_HORIZONTALLY
+            autoCenter: Phaser.Scale.CENTER_HORIZONTALLY
         },
-        scene: 
-            [Tierra],
+        scene: [Tierra],           
         physics: { 
         default: 'arcade', 
             arcade: { 
