@@ -1,4 +1,4 @@
-import entities from './entities.js';
+import entities from './src/entities/entities.js';
 
 export default class pavana extends Phaser.GameObjects.Sprite {
 	constructor(scene, x, y) {
