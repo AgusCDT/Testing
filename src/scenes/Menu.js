@@ -1,23 +1,23 @@
 import ShopButton from '../components/ShopButton.js';
-import StartButton from '../components/StartButton.js';
+import PlayButton from '../components/PlayButton.js';
 
 export default class Menu extends Phaser.Scene {
 	constructor() {
 		super({ key: 'menu' });
 		this.ShopButton = new ShopButton(this); 
-		this.StartButton = new StartButton(this);
+		this.PlayButton = new PlayButton(this);
 	}
 	 // preload de la imagen del menu
 	 preload() {
-	 	this.load.image('menu', './assets/imagenes/otras/nodos.png');
+	 	/*this.load.image('menu', './assets/imagenes/');*/
 	 	this.ShopButton.preload();
-	 	this.StartButton.preload();
+	 	this.PlayButton.preload();
 	 }
 	 // creación del botón
 	 create() {
-	 	this.add.image(0, 0, 'menu').setOrigin(0, 0);
+	 	/*this.add.image(0, 0, 'menu').setOrigin(0, 0);*/
 	 	this.ShopButton.create();
-	 	this.StartButton.create();
+	 	this.PlayButton.create();
 	 }
 }
 	

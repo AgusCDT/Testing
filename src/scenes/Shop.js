@@ -7,7 +7,7 @@ export default class Shop extends Phaser.Scene {
 	}
 	 // preload de la imagen de la shop
 	 preload() {
-	 	this.load.image('shop',  './assets/imagenes/otras/levitacion.png');
+	 	this.load.image('shop',  './assets/imagenes/otras/shop.png');
 	 	this.MenuButton.preload();
 	 }
 	 // creación del botón
