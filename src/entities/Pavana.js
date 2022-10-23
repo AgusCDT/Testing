@@ -9,7 +9,7 @@ export default class Pavana extends Phaser.GameObjects.Sprite{
 		this.speedY = 0;
 		this.maxSpeed = 400;
 		this.acceleration = 10;
-		this.deceleration = 20;
+		this.deceleration = 10;
 		this.cursors = this.scene.input.keyboard.createCursorKeys();		
 	}
 	preUpdate() {
@@ -20,14 +20,14 @@ export default class Pavana extends Phaser.GameObjects.Sprite{
 		    	if (this.speedY < this.maxSpeed) {
 					this.speedY += this.acceleration;
 		    	}
-		    	console.log("Arriba");
+		    	console.log("Arriba2");
 		    }
 		    else if (this.cursors.down.isDown) {
 		    	this.body.setVelocityY(this.speedY);
 		    	if (this.speedY < this.maxSpeed) {
 					this.speedY += this.acceleration;
 		    	}
-		    	console.log("Abajo");
+		    	console.log("Abajo2");
 		    }
 		    if (this.cursors.left.isDown) {
 		    	this.body.setVelocityX(-this.speedX);
@@ -59,8 +59,8 @@ export default class Pavana extends Phaser.GameObjects.Sprite{
 	    		}
 	    	}
 	    	this.body.setVelocityX(this.speedX);
-	    	this.body.setVelocityX(this.speedY);
-	    	console.log("Parado");
+	    	this.body.setVelocityY(this.speedY);
+	    	console.log("Parado2");
 	    }
 	}
 }
