@@ -1,6 +1,7 @@
 import Shop from './scenes/Shop.js';
 import Menu from './scenes/Menu.js';
 import Tierra from './scenes/Tierra.js';
+
     let config = {
         type: Phaser.AUTO,
         width: 800,
@@ -20,4 +21,3 @@ import Tierra from './scenes/Tierra.js';
     };
 
 new Phaser.Game(config);
-
