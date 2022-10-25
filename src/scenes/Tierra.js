@@ -19,5 +19,9 @@ export default class Tierra extends Phaser.Scene {
 		this.Parallax.create();		
 	 	/*this.add.image(0, 0, 'tierra').setOrigin(0, 0);*/
 	 	this.pavana = new Pavana(this, 100, 100); 		
-	}	
+	}
+
+	update() {
+		this.Parallax.update();
+	}
 }
